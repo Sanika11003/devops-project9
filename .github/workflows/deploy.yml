@@ -11,10 +11,10 @@ jobs:
 
     env:
       AWS_REGION: ap-south-1
-      ECR_REPOSITORY: devops-project9
+      ECR_REPOSITORY: devops-project9-repo
       ECS_SERVICE: devops-project9-service
       ECS_CLUSTER: devops-project9-cluster
-      CONTAINER_NAME: devops-project9
+      CONTAINER_NAME: devops-project9-container
 
     steps:
       - name: Checkout Source Code
