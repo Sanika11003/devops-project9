@@ -11,7 +11,7 @@ public class App {
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         
         server.createContext("/", exchange -> {
-            String response = "Hello, Production App - VERSION 1.0 Deployment Successfully Automated via GitHub Actions!";
+            String response = "Hello, Production App - VERSION 2.0 Deployment Successfully Automated via GitHub Actions!";
             exchange.sendResponseHeaders(200, response.length());
             OutputStream os = exchange.getResponseBody();
             os.write(response.getBytes());
